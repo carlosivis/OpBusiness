@@ -74,7 +74,7 @@
         tools:layout="@layout/fragment_estatisticas" />
     <fragment
         android:id="@+id/contatosFragment"
-        android:name="com.example.opbusiness.ContatosFragment"
+        android:name="com.example.opbusiness.ui.ContatosFragment"
         android:label="fragment_contatos"
         tools:layout="@layout/fragment_contatos" />
 </navigation>
