@@ -44,7 +44,11 @@
         android:id="@+id/estoqueFragment"
         android:name="com.example.opbusiness.ui.EstoqueFragment"
         android:label="fragment_estoque"
-        tools:layout="@layout/fragment_estoque" />
+        tools:layout="@layout/fragment_estoque" >
+        <action
+            android:id="@+id/action_estoqueFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+    </fragment>
     <fragment
         android:id="@+id/vendasFragment"
         android:name="com.example.opbusiness.ui.vendas.VendasFragment"
@@ -61,7 +65,14 @@
         android:id="@+id/despesasFragment"
         android:name="com.example.opbusiness.ui.DespesasFragment"
         android:label="fragment_despesas"
-        tools:layout="@layout/fragment_despesas" />
+        tools:layout="@layout/fragment_despesas" >
+        <action
+            android:id="@+id/action_despesasFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+        <action
+            android:id="@+id/action_despesasFragment_to_estatisticasFragment"
+            app:destination="@id/estatisticasFragment" />
+    </fragment>
     <fragment
         android:id="@+id/dadosVendasFragment"
         android:name="com.example.opbusiness.ui.vendas.DadosVendasFragment"
@@ -77,4 +88,9 @@
         android:name="com.example.opbusiness.ui.ContatosFragment"
         android:label="fragment_contatos"
         tools:layout="@layout/fragment_contatos" />
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="com.example.opbusiness.ui.InputFragment"
+        android:label="fragment_input"
+        tools:layout="@layout/fragment_input" />
 </navigation>

@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        android:id="@+id/btnEdit"
+        android:id="@+id/btnPeríodo"
         android:layout_width="170dp"
         android:layout_height="41dp"
         android:text="Editar"
@@ -30,7 +30,7 @@
         android:layout_width="404dp"
         android:layout_height="195dp"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/btnEdit"
+        app:layout_constraintBottom_toTopOf="@+id/btnPeríodo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

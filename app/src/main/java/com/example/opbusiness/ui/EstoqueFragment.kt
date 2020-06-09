@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.opbusiness.R
+import kotlinx.android.synthetic.main.fragment_estoque.*
 
 class EstoqueFragment : Fragment() {
 
@@ -20,8 +22,8 @@ class EstoqueFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?){
         super.onViewCreated(view, savedInstanceState)
-        btnEdit.setOnClickListener{
-            findNavController().navigate(R.id.action_EstoqueFragment_to_InputFragment)
+        btnPeríodo.setOnClickListener{
+            findNavController().navigate(R.id.action_estoqueFragment_to_inputFragment)
         }
     }
 
