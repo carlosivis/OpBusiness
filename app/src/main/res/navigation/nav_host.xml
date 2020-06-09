@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.example.opbusiness.ui.PerfilFragment"
+        android:name="com.example.opbusiness.ui.perfil.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
         <action

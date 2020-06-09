@@ -4,25 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.LoginFragment">
+    tools:context=".ui.LoginFragment"
+    >
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/op_business"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="fitCenter"
+        app:layout_constraintVertical_bias="0.1"
+        />
 
     <EditText
         android:id="@+id/inputLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"
-        android:hint="usuario"
+        android:hint=" usuario"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
         />
     <EditText
         android:id="@+id/inputPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="12"
-        android:hint="senha"
+        android:hint=" senha"
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
