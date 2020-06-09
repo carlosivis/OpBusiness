@@ -74,7 +74,16 @@
         tools:layout="@layout/fragment_estatisticas" />
     <fragment
         android:id="@+id/contatosFragment"
-        android:name="com.example.opbusiness.ui.ContatosFragment"
+        android:name="com.example.opbusiness.ui.fornecedores.FornecedoresFragment"
         android:label="fragment_contatos"
-        tools:layout="@layout/fragment_contatos" />
+        tools:layout="@layout/fragment_fornecedores" >
+        <action
+            android:id="@+id/action_contatosFragment_to_addFornecedor"
+            app:destination="@id/addFornecedor" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFornecedor"
+        android:name="com.example.opbusiness.ui.fornecedores.AddFornecedor"
+        android:label="fragment_add_fornecedor"
+        tools:layout="@layout/fragment_add_fornecedor" />
 </navigation>

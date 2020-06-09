@@ -5,4 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorBackground">#CFF4E2 </color>
     <color name="dark_green">#07AEA4</color>
+    <color name="gray">#D4E1D5</color>
+    <color name="green_table">#A3D9BF</color>
+    <color name="dark">#000</color>
 </resources>
