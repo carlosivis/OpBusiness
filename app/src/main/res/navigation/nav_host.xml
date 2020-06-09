@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
-        android:name="com.example.opbusiness.ui.PerfilFragment"
+        android:name="com.example.opbusiness.ui.perfil.PerfilFragment"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
         <action
@@ -26,5 +26,64 @@
         android:id="@+id/homeFragment"
         android:name="com.example.opbusiness.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_estoqueFragment"
+            app:destination="@id/estoqueFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vendasFragment"
+            app:destination="@id/vendasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_despesasFragment"
+            app:destination="@id/despesasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_contatosFragment"
+            app:destination="@id/contatosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/estoqueFragment"
+        android:name="com.example.opbusiness.ui.EstoqueFragment"
+        android:label="fragment_estoque"
+        tools:layout="@layout/fragment_estoque" />
+    <fragment
+        android:id="@+id/vendasFragment"
+        android:name="com.example.opbusiness.ui.vendas.VendasFragment"
+        android:label="fragment_vendas"
+        tools:layout="@layout/fragment_vendas" >
+        <action
+            android:id="@+id/action_vendasFragment_to_dadosVendasFragment"
+            app:destination="@id/dadosVendasFragment" />
+        <action
+            android:id="@+id/action_vendasFragment_to_estatisticasFragment"
+            app:destination="@id/estatisticasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/despesasFragment"
+        android:name="com.example.opbusiness.ui.DespesasFragment"
+        android:label="fragment_despesas"
+        tools:layout="@layout/fragment_despesas" />
+    <fragment
+        android:id="@+id/dadosVendasFragment"
+        android:name="com.example.opbusiness.ui.vendas.DadosVendasFragment"
+        android:label="fragment_dados_vendas"
+        tools:layout="@layout/fragment_dados_vendas" />
+    <fragment
+        android:id="@+id/estatisticasFragment"
+        android:name="com.example.opbusiness.ui.vendas.EstatisticasFragment"
+        android:label="fragment_estatisticas"
+        tools:layout="@layout/fragment_estatisticas" />
+    <fragment
+        android:id="@+id/contatosFragment"
+        android:name="com.example.opbusiness.ui.fornecedores.FornecedoresFragment"
+        android:label="fragment_contatos"
+        tools:layout="@layout/fragment_fornecedores" >
+        <action
+            android:id="@+id/action_contatosFragment_to_addFornecedor"
+            app:destination="@id/addFornecedor" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFornecedor"
+        android:name="com.example.opbusiness.ui.fornecedores.AddFornecedor"
+        android:label="fragment_add_fornecedor"
+        tools:layout="@layout/fragment_add_fornecedor" />
 </navigation>
