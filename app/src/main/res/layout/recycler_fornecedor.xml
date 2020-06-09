@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <TableRow
         android:background="@color/dark_green"
@@ -18,7 +18,7 @@
             android:textColor="@color/dark"
             android:text="Teste"/>
         <TextView
-            android:id="@+id/txtContatoFornecedor"
+            android:id="@+id/txtEmailFornecedor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="8"
@@ -26,6 +26,15 @@
             android:padding="5dp"
             android:textColor="@color/dark"
             android:text="Emailxxx"/>
+        <TextView
+            android:id="@+id/txtTelefoneFornecedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:background="@color/green_table"
+            android:padding="5dp"
+            android:textColor="@color/dark"
+            android:text="7777777"/>
     </TableRow>
 
 

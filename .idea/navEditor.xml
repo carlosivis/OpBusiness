@@ -8,13 +8,13 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="blankFragment">
+                  <entry key="addFornecedor">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="284" />
-                            <option name="y" value="-643" />
+                            <option name="x" value="452" />
+                            <option name="y" value="-879" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -25,9 +25,18 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="458" />
-                            <option name="y" value="-372" />
+                            <option name="x" value="438" />
+                            <option name="y" value="-427" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_contatosFragment_to_addFornecedor">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
