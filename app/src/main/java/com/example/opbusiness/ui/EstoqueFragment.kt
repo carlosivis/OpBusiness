@@ -18,4 +18,11 @@ class EstoqueFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_estoque, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?){
+        super.onViewCreated(view, savedInstanceState)
+        btnEdit.setOnClickListener{
+            findNavController().navigate(R.id.action_EstoqueFragment_to_InputFragment)
+        }
+    }
+
 }
